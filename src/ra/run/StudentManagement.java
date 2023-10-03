@@ -76,11 +76,16 @@ public class StudentManagement {
         for (Student student : students) {
             if (student.getStudentId() == id) {
                 flag = true;
-                student.setStudentName();
-                student.setAddress();
-                student.setPhone();
-                student.setGender();
-                student.setMark();
+                System.out.println("Nhập vào tên học sinh");
+                student.setStudentName(sc.nextLine());
+                System.out.println("Nhập vào địa chỉ học sinh");
+                student.setAddress(sc.nextLine());
+                System.out.println("Nhập vào số điện thoại học sinh");
+                student.setPhone(sc.nextLine());
+                System.out.println("Nhập vào giới tính học sinh (true/false)");
+                student.setGender(Boolean.parseBoolean(sc.nextLine()));
+                System.out.println("Nhập vào điểm số học sinh");
+                student.setMark(Double.parseDouble(sc.nextLine()));
             }
         }
         if (!flag) {

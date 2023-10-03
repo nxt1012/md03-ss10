@@ -28,60 +28,48 @@ public class Student implements StudentService {
         return studentId;
     }
 
-    public void setStudentId() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập vào id học sinh");
-        this.studentId = Integer.parseInt(sc.nextLine());
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
     public String getStudentName() {
         return studentName;
     }
 
-    public void setStudentName() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập vào tên học sinh");
-        this.studentName = sc.nextLine();
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
     }
 
     public String getAddress() {
         return address;
     }
 
-    public void setAddress() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập vào địa chỉ học sinh");
-        this.address = sc.nextLine();
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getPhone() {
         return phone;
     }
 
-    public void setPhone() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập vào số điện thoại học sinh");
-        this.phone = sc.nextLine();
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public boolean isGender() {
         return gender;
     }
 
-    public void setGender() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập vào giới tính của học sinh (true/false)");
-        this.gender = Boolean.parseBoolean(sc.nextLine());
+    public void setGender(boolean gender) {
+        this.gender = gender;
     }
 
     public double getMark() {
         return mark;
     }
 
-    public void setMark() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập vào điểm số của học sinh:");
-        this.mark = Double.parseDouble(sc.nextLine());
+    public void setMark(double mark) {
+        this.mark = mark;
     }
 
     @Override
